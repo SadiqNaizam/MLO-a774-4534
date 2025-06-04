@@ -4,89 +4,91 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light Mode Palette - Teal & Coral Theme */
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 25% 20%; /* Dark Slate Blue/Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 25% 20%; /* Dark Slate Blue/Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 25% 20%; /* Dark Slate Blue/Gray */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 170 60% 45%; /* Teal */
+    --primary-foreground: 170 30% 95%; /* Very Light Teal/Off-White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 30% 90%; /* Light Grayish Blue */
+    --secondary-foreground: 170 60% 35%; /* Darker Teal */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 30% 96%; /* Very Light Gray */
+    --muted-foreground: 215 15% 55%; /* Medium Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 10 85% 60%; /* Coral */
+    --accent-foreground: 0 0% 100%; /* White (for text on accent) */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%; /* Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 88%; /* Light Gray */
+    --input: 210 20% 88%; /* Light Gray */
+    --ring: 10 85% 60%; /* Coral - for focus rings */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Updated from 0.5rem for softer corners (12px) */
 
-    --sidebar-background: 0 0% 98%;
+    /* Typography */
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-heading: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar - Light Mode */
+    --sidebar-background: 210 30% 97%;
+    --sidebar-foreground: 220 25% 30%;
+    --sidebar-primary: 170 60% 40%;
+    --sidebar-primary-foreground: 170 30% 95%;
+    --sidebar-accent: 10 85% 55%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 20% 85%;
+    --sidebar-ring: 10 85% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark Mode Palette - Teal & Coral Theme */
+    --background: 220 15% 12%; /* Very Dark Blue/Gray */
+    --foreground: 210 20% 92%; /* Light Grayish Blue/Off-White */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 15% 15%; /* Slightly Lighter Dark Blue/Gray */
+    --card-foreground: 210 20% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 15% 15%;
+    --popover-foreground: 210 20% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 170 55% 65%; /* Lighter Teal for Dark Mode */
+    --primary-foreground: 170 60% 15%; /* Very Dark Teal */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 15% 20%; /* Dark Gray */
+    --secondary-foreground: 170 55% 75%; /* Lighter Teal */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 15% 25%; /* Slightly Lighter Dark Gray */
+    --muted-foreground: 210 15% 65%; /* Medium Light Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 10 75% 70%; /* Lighter Coral for Dark Mode */
+    --accent-foreground: 10 60% 15%; /* Very Dark Coral/Brown */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 60%; /* Slightly Lighter Red for Dark Mode */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 15% 30%; /* Medium Dark Gray */
+    --input: 220 15% 30%;
+    --ring: 10 75% 70%; /* Lighter Coral - for focus rings */
+
+    /* Sidebar - Dark Mode */
+    --sidebar-background: 220 15% 10%;
+    --sidebar-foreground: 210 20% 88%;
+    --sidebar-primary: 170 55% 70%;
+    --sidebar-primary-foreground: 170 60% 10%;
+    --sidebar-accent: 10 75% 75%;
+    --sidebar-accent-foreground: 10 60% 10%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 10 75% 70%;
   }
 }
 
@@ -96,6 +98,10 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans; /* Apply base font */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading; /* Apply heading font */
   }
 }
